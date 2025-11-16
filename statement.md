@@ -1,11 +1,14 @@
-# Digital Root
+# Programmingtask Digital Root
 
 For a given number `N` calculate the **Digital Root**.
 
 The Digital Root is calculated by summing up all digits of a number. 
 E.g. `2025` has a Digital Root of `9` because `2+0+2+5 = 9`
 
-Implement the method solution(input) and start the code to run the testscases. 
+Implement the method `solution(input)` in the code below and click on "RUN" to start the testscases. 
+
+**Constraints:**
+0 ≤ N ≤ 1000000000
 
 ```python runnable
 def solution(N:int):
