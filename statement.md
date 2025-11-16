@@ -44,7 +44,7 @@ for N, check in zip(INPUTS, CHECKS):
         sys.exit(1)
         
 print("------------------------------------------------------------")
-print(f"SUCCESS: congratulations, you solved the riddle at {datetime.now()+ timedelta(hours=1)}")
+print(f"SUCCESS: congratulations, you solved the task at {datetime.now()+ timedelta(hours=1)}")
 
 ```
 
