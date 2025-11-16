@@ -25,8 +25,10 @@ def digital_root(n:int):
 INPUT = [2025, 0, 9999, 17112025]
 CHECKS = [3205138698, 3158815156, 3540719418, 3071405752]
 
+import sys
 import hashlib
 from datetime import datetime, timedelta
+
 for N, check in zip(INPUT, CHECKS):
     result = digital_root(N)
     chk = hashlib.md5(f"{N}{result}".encode()).digest()
@@ -37,6 +39,7 @@ for N, check in zip(INPUT, CHECKS):
     else:
         print(f'FAIL: Digital Root for {N} is not {result}')
         sys.exit(1)
+        
 print(f"SUCCESS: congratulations, you solved the riddle at {datetime.now()+ timedelta(hours=1)}")
 
 ```
