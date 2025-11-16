@@ -8,15 +8,12 @@ E.g. `2025` has a Digital Root of `9` because `2+0+2+5 = 9`
 Implement the method solution(input) and start the code to run the testscases. 
 
 ```python runnable
-def solution(input:int):
+def solution(N:int):
 
     # ---------------------------- #
     # - TODO: ADD YOUR CODE HERE - #
     # ---------------------------- #
-    num_string = str(input)
-    result = 0
-    for digit in num_string:
-        result = result + int(digit)
+    result = N
 
     return result
 
