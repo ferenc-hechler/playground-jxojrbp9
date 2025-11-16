@@ -37,7 +37,7 @@ for N, check in zip(INPUT, CHECKS):
     if chk == check:
         print(f'GOOD: Digital Root for {N} is {result}')
     else:
-        print(f'FAIL: Digital Root for {N} is not {result}')
+        print(f'FAIL: Digital Root for {N} is not {result}', file=sys.stder)
         sys.exit(1)
         
 print(f"SUCCESS: congratulations, you solved the riddle at {datetime.now()+ timedelta(hours=1)}")
