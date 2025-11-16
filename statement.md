@@ -6,7 +6,7 @@ E.g. {{2025}} has a Digital Root of {{9}} because `2+0+2+5=9`
 
 
 ```python runnable
-def digital_root(n:int) {
+def digital_root(n:int):
     """TODO: add your calculation here"""
     result = n
     return n
