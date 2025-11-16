@@ -27,7 +27,7 @@ INPUT = [2025, 0, 9999, 17112025]
 CHECKS = [3205138698, 3158815156, 3540719418, 3071405752]
 success = True
 for N, check in zip(INPUT, CHECKS):
-    result = root_of_digital_root(N)
+    result = digital_root(N)
     chk = hashlib.md5(f"{N}{result}".encode()).digest()
     chk = (((chk[3]<<8)+chk[2]<<8)+chk[1]<<8)+chk[0]
     print(chk)
