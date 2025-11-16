@@ -33,7 +33,7 @@ import hashlib
 from datetime import datetime, timedelta
 
 for N, check in zip(INPUTS, CHECKS):
-    result = digital_root(N)
+    result = solution(N)
     chk = hashlib.md5(f"{N}{result}".encode()).digest()
     chk = (((chk[3]<<8)+chk[2]<<8)+chk[1]<<8)+chk[0]
     #print(chk)
