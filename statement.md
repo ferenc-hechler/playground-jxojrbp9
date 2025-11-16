@@ -39,5 +39,6 @@ for N, check in zip(INPUT, CHECKS):
         break
 if success:
     from datetime import datetime, timedelta
-    print(f"SUCCESS: congratulations, you solved the riddle at {datetime.now()+ timedelta(hours=1)}")```
+    print(f"SUCCESS: congratulations, you solved the riddle at {datetime.now()+ timedelta(hours=1)}")
+```
 
