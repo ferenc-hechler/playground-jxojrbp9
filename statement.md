@@ -22,10 +22,11 @@ def digital_root(n:int):
 # ---------- DO NOT MODIFY THE CODE BELOW ---------- #
 # -------------------------------------------------- #
 
-import hashlib
 INPUT = [2025, 0, 9999, 17112025]
 CHECKS = [3205138698, 3158815156, 3540719418, 3071405752]
-success = True
+
+import hashlib
+from datetime import datetime, timedelta
 for N, check in zip(INPUT, CHECKS):
     result = digital_root(N)
     chk = hashlib.md5(f"{N}{result}".encode()).digest()
@@ -35,10 +36,8 @@ for N, check in zip(INPUT, CHECKS):
         print(f'GOOD: Digital Root for {N} is {result}')
     else:
         print(f'FAIL: Digital Root for {N} is not {result}')
-        success = False
-        break
-if success:
-    from datetime import datetime, timedelta
-    print(f"SUCCESS: congratulations, you solved the riddle at {datetime.now()+ timedelta(hours=1)}")
+        sys.exit(1)
+print(f"SUCCESS: congratulations, you solved the riddle at {datetime.now()+ timedelta(hours=1)}")
+
 ```
 
