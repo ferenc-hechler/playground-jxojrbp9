@@ -10,7 +10,7 @@ def digital_root(n:int):
     """TODO: add your calculation here"""
     result = n
     return n
-}
+
 
 INPUT = [2025, 0, 9999, 17112025]
 for N in INPUT:
