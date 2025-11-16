@@ -1,11 +1,11 @@
-# Root of Digital Root
+# Digital Root
 
-For a given number `N` calculate iteratively the **Digital Root** until the result has only 1 digit (is in range 0..9).
+For a given number `N` calculate the **Digital Root**.
 
 The Digital Root is calculated by summing up all digits of a number. 
-E.g. {{2025}} has a Digital Root of {{9}} because `2+0+2+5 = 9`
+E.g. `2025` has a Digital Root of `9` because `2+0+2+5 = 9`
 
-If the digital root is higher than 9, continue calculate the digital root of the result.
+Implement the method solution(input) and start the code to run the testscases. 
 
 ```python runnable
 def solution(input:int):
