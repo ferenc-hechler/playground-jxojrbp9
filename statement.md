@@ -93,7 +93,7 @@ public class Main {
         }    
     }
     System.out.println("------------------------------------------------------------");
-    System.out.println("SUCCESS: congratulations, you solved the task at "+new Date().toString());
+    System.out.println("SUCCESS: congratulations, you solved the task at "+new Date(System.currentTimeMillis() + 0*3600000).toString());
   }
 }
 ```
@@ -354,7 +354,7 @@ func main() {
 	}
 	
 	fmt.Println("------------------------------------------------------------")
-	now := time.Now() // .Add(time.Hour)
+	now := time.Now().Add(0*time.Hour)
 	fmt.Printf("SUCCESS: congratulations, you solved the task at %s\n", now.Format(time.RFC1123))
 }
 ```
