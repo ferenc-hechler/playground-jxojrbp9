@@ -50,7 +50,7 @@ for N, check in zip(INPUTS, CHECKS):
         sys.exit(1)
         
 print("------------------------------------------------------------")
-print(f"SUCCESS: congratulations, you solved the task at {datetime.now()+ timedelta(hours=1)}")
+print(f"SUCCESS: congratulations, you solved the task at {datetime.now()+ timedelta(hours=0)}")
 
 ```
 
@@ -142,7 +142,7 @@ int main(void) {
         }
     }
 	time_t now = time(NULL);
-	now += 60 * 60;
+	now += 0 * 60 * 60;
 	struct tm *tm = localtime(&now);
 	char buf[1024];
 	strftime(buf, 1023, "------------------------------------------------------------\n"
@@ -202,7 +202,7 @@ int main()
     }
     
     time_t now = time(NULL);
-    now += 60 * 60;
+    now += 0 * 60 * 60;
     struct tm *tm = localtime(&now);
     char buf[1024];
     strftime(buf, 1023, "SUCCESS: congratulations, you solved the task at %a %b %d %H:%M:%S", tm);
@@ -253,7 +253,7 @@ for (let i = 0; i < INPUTS.length; i++) {
 
 console.log("------------------------------------------------------------");
 const now = new Date();
-now.setHours(now.getHours() + 1);
+now.setHours(now.getHours() + 0);
 console.log(`SUCCESS: congratulations, you solved the task at ${now}`);
 ```
 
@@ -303,7 +303,7 @@ class Program
         }
         
         Console.WriteLine("------------------------------------------------------------");
-        Console.WriteLine($"SUCCESS: congratulations, you solved the task at {DateTime.Now.AddHours(1)}");
+        Console.WriteLine($"SUCCESS: congratulations, you solved the task at {DateTime.Now.AddHours(0)}");
     }
 }
 ```
@@ -354,7 +354,7 @@ func main() {
 	}
 	
 	fmt.Println("------------------------------------------------------------")
-	now := time.Now().Add(time.Hour)
+	now := time.Now() // .Add(time.Hour)
 	fmt.Printf("SUCCESS: congratulations, you solved the task at %s\n", now.Format(time.RFC1123))
 }
 ```
@@ -398,7 +398,7 @@ function main {
 		((i++))
 	done
 	sec=`date +%s`
-	((sec+=60*60))
+	((sec+=0*60*60))
 	echo ------------------------------------------------------------
 	echo -n 'SUCCESS: congratulations, you solved the task at '
 	date --date=@$sec '+%a %b %d %H:%M:%S'
@@ -445,7 +445,7 @@ Public Module Program
         Next
         
         Console.WriteLine("------------------------------------------------------------")
-        Console.WriteLine("SUCCESS: congratulations, you solved the task at "+DateTime.Now.AddHours(1).ToString())
+        Console.WriteLine("SUCCESS: congratulations, you solved the task at "+DateTime.Now.AddHours(0).ToString())
     End Sub
 End Module
 ```
@@ -492,6 +492,6 @@ fun main(args: Array<String>) {
     }
     
     println("------------------------------------------------------------")
-    println("SUCCESS: congratulations, you solved the task at ${Date(System.currentTimeMillis() + 3600000)}")
+    println("SUCCESS: congratulations, you solved the task at ${Date(System.currentTimeMillis() + 0*3600000)}")
 }
 ```
